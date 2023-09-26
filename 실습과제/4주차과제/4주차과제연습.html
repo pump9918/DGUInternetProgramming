@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>4주차과제</title>
+    </head>
+    <body>
+        <!--블록 태그-->
+        <h3>details와 summary 태그</h3>
+        Q&amp;A 리스트
+        <hr>
+        <details>
+            <summary>Question1</summary>
+            <p>짱구 친구들 이름을 말하시오</p>
+        </details>
+        <details>
+            <summary>Answer1</summary>
+            <p>훈이 철수 유리 맹구 수지</p>
+        </details>
+
+        <!--인라인태그-->
+        <hr>
+        <p>내일 <mark>HTML5 시험</mark><br>
+        시간은 <time>09:00</time><br>
+        난이도<meter value="0.8" max="1.0">70%</meter><br>
+        자료 업로딩 (30%)
+            <progress value="3" max="10"></progress><br>
+        </p>
+
+        <!--Form태그-->
+        <hr>
+        <form action="URL"
+            method="get|post"
+            enctype="base64"
+            name="Form_name"
+            target="_blank|_self|_parent|_top|frame_name"
+            >
+
+            <h3>Checkbox</h3>
+            <p>
+                <input type="checkbox" value="a"> 사과
+                <input type="checkbox" value="b"> 바나나
+                <label><input type="checkbox" value="c"> 딸기</label>
+            </p>
+            <h3></h3>
+            <p>
+                <input type="radio" name="fruit" value="a"> 사과
+                <input type="radio" name="fruit" value="b"> 바나나
+                <input type="radio" id="strawberry" name="fruit" value="c">
+                <label for="strawberry"> 딸기</label>
+            </p>
+            <p> 나라 : <input type="text" list="countries"><br>
+                <datalist id="countries">
+                    <option value="스페인">
+                    <option value="일본">
+                    <option value="아르헨티나">
+                </datalist>
+            </p>
+            <p> 보고싶은것:
+                <select>
+                    <option value="mountain">산</option>
+                    <option value="beach">해변</option>
+                    <option value="city" selected>도시</option>
+                </select>
+            </p>
+            <h3>텍스트 영역</h3>
+            <input type="text" rows="20" placeholder="클릭 시 사라지는 텍스트"><br>
+            <input type="text" rows="20" value="텍스트창에 입력된 텍스트"><br>
+            <textarea name = "col" rows="5" cols="30">장문의 텍스트 입력</textarea><br>
+            <input type="submit" value="보내기">
+            <input type="reset" value="취소">
+        </form>
+    </body>
+</html>
