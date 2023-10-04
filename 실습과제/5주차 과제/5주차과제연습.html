@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>인라인 스타일</title>
+        <!--임베디드 스타일-->
+        <style type = "text/css">
+            h1 {background-color : yellow}
+            p {color : blue}
+            /*css 선택자*/
+            p, h3{
+                color:blue;
+            }
+            .redtxt {
+                color: red;
+            }
+            #yellowbg {
+                background-color: yellow;
+            }
+            /*자식, 후손 선택자*/
+            div {
+                background-color: black;
+                color: red;
+            }
+            div > span {
+                color: yellow;
+            }
+        </style>
+        <!--외부 스타일 시트-->
+        <link rel = "stylesheet" type = "text/css" href = "test.css">
+    </head>
+    <body>
+        <!--인라인 스타일-->
+        <h1 style = "background : yellow">
+            내용이 표시되는 부분의 배경을 노란색으로...
+        </h1>
+        <p style = "color : blue">단락에서의 문자색은 파란색으로...</p>
+
+        <!--부모태그와 자식태그-->
+        <br>
+        <div style="font-style:italic; color:white; background-color: black;">
+            부모태그의 영역입니다.
+            <p style="background-color:blue;">
+                자식태그의 영역입니다.
+            </p>
+            <br>
+        </div>
+
+        <!--CSS선택자-->
+        <!--전체 선택자: *{ color:blue; background-color:red; }-->
+        <!--태그 선택자: h1{ color:blue; background-color:red; }-->
+        <!--클래스 선택자: .class{ color:blue; background-color:red; }-->
+        <!--아이디 선택자: #id{ color:blue; background-color:red; }-->
+
+        <p>이 텍스트는 태그 선택자로 인해 글자가 파란색으로 표시됩니다</p>
+        <p class="redtxt">이 텍스트는 같은 태그이지만 클래스 선택지로 인해 빨간색으로 표시됩니다.</p>
+        <h2 class="redtxt">p태그가 아니더라도 클래스 선택자의 영향을 받아 빨간색 글자로 표시됩니다.</h2>
+        <h3>이 텍스트도 태그 선택자의 영향을 받아 글자가 파란색으로 표시됩니다.</h3>
+        <h3 class="redtxt" id="yellowbg">클래스 선택자와 아이디 선택자의 영향으로 노란 배경, 빨간 글자로 표시됩니다.</h3>
+    
+        <!--부모태그와 자식태그-->
+        <div>
+            부모태그인 div의 영역입니다.
+            <br>
+            <span>
+                div의 자손인 span의 영역입니다.
+            </span>
+            <p>
+                <span>div의 후손인 span의 영역입니다.</span>
+                <span>자식선택자는 후손에겐 영향을 끼치지 않습니다.</span>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>건국대학교</title>
+        <!--임베디드 스타일-->
+        <style>
+            /*css 클래스 선택자*/
+            .maincolor {
+                color: red;
+            }
+            /*자식 선택자*/
+            div {
+                background-color: pink;
+                color: blue;
+            }
+            div > span {
+                color: yellow;
+            }
+            /*가상 클래스 선택자*/
+            div:hover{
+                background-color: rgb(255, 149, 0);
+            }
+            div:active{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-style:inherit;">건국대를 알아보자</h1>
+
+        <hr>
+        <h2 style="font-style:italic;">1. 개요</h2>
+        <div>
+            <p>건국대학교는 서울특별시 광진구 화양동, 충청북도 충주시에 소재한 사립 종합대학이다.</p>
+
+            <p>상허 유석창 박사[9]가 1946년 5월 15일 조선정치학관으로 설립했다.
+                [10] 물론 개교기념일과 민중병원(건국대학교병원의 전신.) 설립일은 다르다.
+                [11] 1948년 재단법인 조선정치학원을 설립하여 조선정치대학관으로 인가받았으며, 
+                1949년 재단법인 정치대학원과 정치대학으로 개편하였다. 교훈은 성(誠)·신(信)·의(意)이다. 
+                처음에는 종로구에 있다가 6·25 전쟁 때 부산에 임시로 이동, 다시 광진구로 이전하였다.[12]</p>
+            
+            <p class="maincolor">2020년 현재, 서울캠퍼스 14개 단과대학과 대학원, 
+                3개 전문대학원(법학전문대학원, 경영전문대학원, 건축전문대학원), 9개 특수대학원. 
+                글로컬캠퍼스 5개 단과대학, 1개 전문대학원(의학전문대학원), 1개 특수대학원으로 구성되어 있다.</p>
+
+            <span>1980년 충청북도 충주시에 분교 설립을 인가받았다.</span>
+        </div>
+        <h2 style="font-style:italic;">2. 위치</h2>
+        <div>
+            <p>서울특별시 광진구 화양동</p>
+            <p class="maincolor">2호선,7호선 건대입구역</p>
+            <span>인근 중국인 거리에 맛집이 많음 => 송화산시도삭면</span>
+        </div>
+        <h2 style="font-style:italic;">3. 메인홈페이지</h2>
+        <div>
+            <a href="http://www.konkuk.ac.kr/do/Index.do" target="_top">건국대학교 메인</a>
+        </div>
+    </body>
+</html>
